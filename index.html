@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <section class="specification">
+                <div class="container">
+                    <h2 class="specification__title">
+                        О компании
+                    </h2>
+                    <div class="row specification__desc">
+                        <div class="specification__desc-logo col-md-3">
+                            <img src="images/logo.svg" alt="logo">
+                        </div>
+                        <div class="col-md-9">
+                            Европейская Юридическая Служба была основана в 2007 году, создав на рынке новую товарную
+                            категорию круглосуточной дистанционной юридической поддержки. Компания стала первой,
+                            предложившей рынку онлайн услугу юридической профилактики по всем видам права.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="slider">
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="images/slider__bg-1.png" alt="slider">
+                                <p class="slider__item-desc"><span>15 000</span> точек продаж</p>
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="images/slider__bg-2.png" alt="slider">
+                                <p class="slider__item-desc"><span>8</span> стран присутствия
+                                    сервиса</p>
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="images/slider__bg-3.png" alt="slider">
+                                <p class="slider__item-desc"><span>4 500 000</span>консультаций</p>
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="images/slider__bg-4.png" alt="slider">
+                                <p class="slider__item-desc"><span>3 000 000</span>пользователей</p>
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="images/slider__bg-5.png" alt="slider">
+                                <p class="slider__item-desc"><span>150</span>корпоративных партнеров</p>
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__item-img" src="images/slider__bg-6.png" alt="slider">
+                                <p class="slider__item-desc"><span>2007</span>год основания</p>
+                            </div>
+                        </div>
+                        <div class="slider__control"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="application">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 application__pic">
+                            <img src="images/app__img.png" alt="images">
+                            <p class="application__img-text">Уже есть бизнес? <br> Откройте счет прямо сейчас!</p>
+                        </div>
+                        <div class="application__desc col-md-6">
+                            <p class="application__text">
+                                Оставьте заявку на открытие счёта, и специалист банка «ВТБ» свяжется с Вами в самое
+                                ближайшее время
+                            </p>
+                            <form class="application__form" id="form" action="#" method="POST">
+                                <div class="application__form-item form-floating">
+                                <input class="input application__form-company form-control" type="text" name="text" id="floatingCompany" placeholder=" ">
+                                <label for="floatingCompany">Наименование заявителя<span>*</span></label>
+                                <div class="errorContainer"></div>
+                                </div>
+                                <div class="application__form-item form-floating">
+                                <input class="input application__form-name form-control" placeholder=" " type="text" name="name" id="floatingName">
+                                <label for="floatingName">Контактное лицо<span>*</span></label>
+                                <div class="errorContainer"></div>
+                                </div>  
+                                <div class="application__form-item form-floating">
+                                    <input class="input application__form-phone form-control" type="tel" id="floatingPhone" placeholder=" " name="tel">
+                                    <label for="floatingPhone" class="input-placeholder">Телефон<span>*</span></label>
+                                    <div class="labelContainer">
+                                        <label for="floatingPhone" class="label-phone">Просьба указать телефон с кодом города. В формате: (код города) номер телефона</label>
+                                    </div>
+                                    <div class="errorContainer"></div>
+                                </div>
+                                <div class="application__form-item">
+                                    <input class="application__form-checkbox" type="checkbox" name="checkbox" id="checkbox">
+                                    <label for="checkbox" class="label-checkbox">Оставляя заявку, вы принимаете условия Пользовательского соглашения и Политики конфиденциальности. </label>
+                                </div>
+                                <button type="submit" class="application__form-btn btn btn-danger">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
