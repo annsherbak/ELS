@@ -364,10 +364,7 @@ label.error {
   }
 }
 @media screen and (max-width: 470px) {
-  .application__pic {
-    margin-bottom: 60px;
-  }
-  .application img {
+  .application__pic img {
     width: 100%;
   }
   .application__img-text {
