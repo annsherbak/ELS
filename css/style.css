@@ -315,9 +315,6 @@ label.error {
   padding: 100px 0 80px;
   background: #F4F7FA;
 }
-.application__img {
-  height: 100%;
-}
 .application__img-text {
   text-align: right;
 }
@@ -359,11 +356,10 @@ label.error {
     padding: 50px 0;
   }
   .application__pic {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
   .application img {
     width: 80%;
-    height: 100%;
     margin: 0 auto;
   }
 }

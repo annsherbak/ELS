@@ -225,9 +225,6 @@ label.error {
 .application {
     padding: 100px 0 80px;
     background: #F4F7FA;
-    &__img {
-        height: 100%;
-    }
     &__img-text {
         text-align: right;
     }
@@ -269,11 +266,10 @@ label.error {
     .application {
         padding: 50px 0;
         &__pic {
-            margin-bottom: 60px;
+            margin-bottom: 20px;
         }
         img {
             width: 80%;
-            height: 100%;
             margin: 0 auto;
         }
     } 
