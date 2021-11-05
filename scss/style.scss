@@ -15,7 +15,7 @@
     }
     &__desc {
         margin-bottom: 60px;
-        align-items: flex-end;
+        align-items: center;
     }
     &__desc-logo {
         margin-bottom: 20px;
@@ -25,16 +25,26 @@
     &__item {
         position: relative;
         margin-right: 30px;
-        width: 320px !important;
+        background: #F4F7FA;
+        display: flex;
+        justify-content: space-between;
+        height: 130px;
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
+        }
     }
     &__item-desc {
-        position: absolute;
-        top: 24px;
-        left: 24px;
+        padding-left: 24px;
+        padding-top: 24px;
         font-size: 20px;
         line-height: 24px;
         color: #606981;
         max-width: 250px;
+        z-index: 3;
     }
     &__item-desc span {
         display: block;
@@ -110,6 +120,7 @@
     display: flex;
     margin-bottom: 24px;
 }
+
 @media screen and (max-width: 650px) {
     .specification {
         padding: 40px 0;
@@ -172,6 +183,7 @@ label.error {
     line-height: 14px;
     color: #333333;
     width: 100%;
+    margin-top: 10px;
 }
 .label-checkbox {
     max-width: 425px;

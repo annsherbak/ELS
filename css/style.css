@@ -97,7 +97,7 @@ a {
 }
 .specification__desc {
   margin-bottom: 60px;
-  align-items: flex-end;
+  align-items: center;
 }
 .specification__desc-logo {
   margin-bottom: 20px;
@@ -106,16 +106,26 @@ a {
 .slider__item {
   position: relative;
   margin-right: 30px;
-  width: 320px !important;
+  background: #F4F7FA;
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+}
+.slider__item img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
 }
 .slider__item-desc {
-  position: absolute;
-  top: 24px;
-  left: 24px;
+  padding-left: 24px;
+  padding-top: 24px;
   font-size: 20px;
   line-height: 24px;
   color: #606981;
   max-width: 250px;
+  z-index: 3;
 }
 .slider__item-desc span {
   display: block;
@@ -257,6 +267,7 @@ label.error {
   line-height: 14px;
   color: #333333;
   width: 100%;
+  margin-top: 10px;
 }
 
 .label-checkbox {
